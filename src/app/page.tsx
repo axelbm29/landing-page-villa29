@@ -1,6 +1,5 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Navbar from "./components/Navbar";
 import MostRequested from "./components/MostRequested";
 import Promotions from "./components/Promotions";
 import Ubication from "./components/Ubication";

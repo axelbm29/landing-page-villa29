@@ -20,7 +20,7 @@ const navLinks = [
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [showNavbar, setShowNavbar] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
+    const [lastScrollY] = useState(0);
 
     const toggleNav = () => {
         setNav(!nav);

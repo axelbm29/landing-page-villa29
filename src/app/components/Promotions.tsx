@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import promoImage from '../assets/Anuncios.png';
 import promoImage2 from '../assets/Anuncios2.png';
 
 const Promotions = () => {
