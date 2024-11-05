@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -40,6 +42,10 @@ body {
   font-style: normal;
 }
 
+.font-calistoga {
+   font-family: Calistoga;
+}
+
 .link-super-large {
   font-size: 42px;
 }
@@ -59,3 +65,118 @@ body {
 .card-about-border-radius {
   border-radius: 48px;
 }
+
+.demoPage {
+    background-color: white; /* Color de fondo de las páginas */
+    border: 1px solid #ccc; /* Borde para las páginas */
+    display: flex; /* Para centrar el contenido */
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Tamaño de texto si lo necesitas */
+}
+
+.flipbook-container {
+    position: relative;
+    transition: transform 0.5s ease, margin 0.5s ease; /* Añadir transición para margenes también */
+}
+
+/* Centra el flipbook cuando tiene la clase 'centered' */
+.centered {
+    transform: translateX(calc(50vw - 150px)); /* Calcula el centro de la pantalla */
+}
+
+
+/* styles.css */
+.blur-background {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 55%; /* Cambia esto para ajustar la posición en móviles */
+    width: 570px; /* Ancho por defecto */
+    height: 580px; /* Altura por defecto */
+    transform: translate(-50%, -50%);
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: rgba(107, 114, 128, 0.5); /* Color de fondo */
+    filter: blur(10px); /* Efecto de difuminado */
+}
+
+@media (max-width: 768px) {
+    .demoPage {
+        margin-top: -30%;
+    }
+    .blur-background {
+        top: 58%; /* Ajusta la posición del fondo difuminado en móviles */
+        width: 300px; /* Ancho para móviles */
+        height: 570px; /* Altura para móviles */
+    }
+}
+
+
+.bounce-animation {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+@keyframes subtleBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.bounce-animation {
+    animation: subtleBounce 1s ease-in-out infinite;
+}
+
+/* Estilos para los iconos en pantallas grandes (posición a los lados) */
+.navigation-button {
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 32px;
+    font-size: 2rem; /* Tamaño del icono */
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: #5F605E;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navigation-button:hover {
+    background-color: black; /* Cambiar a negro al pasar el mouse */
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5); /* Efecto de resplandor blanco */
+}
+
+.navigation-button:active {
+    background-color: black; /* Mantener el color negro al hacer clic */
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7); /* Aumentar el efecto de resplandor al hacer clic */
+    transform: scale(0.95); /* Pequeña reducción de tamaño para efecto de pulsación */
+}
+
+.navigation-button:hover .icon {
+    color: white; /* Cambiar el color del icono a blanco al pasar el mouse */
+}
+.navigation-button-left {
+    left: 25%;
+}
+
+.navigation-button-right {
+    right: 25%;
+}
+
+/* Estilos para pantallas móviles (posicionar los botones en la parte inferior) */
+@media (max-width: 768px) {
+    .navigation-button {
+        position: absolute;
+        top: 100%;
+        transform: translateY(0);
+        margin: 10px;
+    }
+    
+}
+

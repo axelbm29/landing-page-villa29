@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMapMarkerAlt, FaClock } from 'react-icons/fa'; // Importa los íconos que usabas antes
+import { FaMapMarkerAlt, FaRegCalendarAlt } from 'react-icons/fa'; // Importa los íconos que usabas antes
 
 const Ubication = () => {
     return (
@@ -15,16 +15,16 @@ const Ubication = () => {
                     {/* Location Info */}
                     <div className="flex flex-col items-center mb-8">
                         <FaMapMarkerAlt className="text-[#1E1E1E] text-5xl mb-4" />
-                        <h3 className="text-[#1E1E1E] font-bold text-xl bowlby-one-regular">UBICACIÓN</h3>
-                        <p className="text-[#1E1E1E] text-center mt-2 font-inter">Sector 3 Grupo 29 Manzana F Lote 3<br />Villa el Salvador</p>
+                        <h3 className="text-[#1E1E1E] font-bold text-2xl bowlby-one-regular">UBICACIÓN</h3>
+                        <p className="text-[#1E1E1E] text-lg text-center mt-2 font-inter">Sector 3 Grupo 29 Manzana F Lote 3<br />Villa el Salvador</p>
                     </div>
 
                     {/* Schedule Info */}
                     <div className="flex flex-col items-center">
-                        <FaClock className="text-[#1E1E1E] text-5xl mb-4 mt-8" />
-                        <h3 className="text-[#1E1E1E] font-bold text-xl bowlby-one-regular">HORARIO</h3>
-                        <p className="text-[#1E1E1E] text-center mt-2 font-inter">Lun, Mie, Jue, Vie, Sab, Dom</p>
-                        <p className="text-[#1E1E1E] text-center font-inter">7:00 PM A 11:00 PM</p>
+                        <FaRegCalendarAlt className="text-[#1E1E1E] text-5xl mb-4 mt-8" />
+                        <h3 className="text-[#1E1E1E] font-bold text-2xl bowlby-one-regular">HORARIO</h3>
+                        <p className="text-[#1E1E1E] text-lg text-center mt-2 font-inter">Lun, Mie, Jue, Vie, Sab, Dom</p>
+                        <p className="text-[#1E1E1E] text-lg text-center font-inter">7:00 PM A 11:00 PM</p>
                     </div>
                 </div>
 
