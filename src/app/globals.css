@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,8 +18,44 @@
   }
 }
 
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bowlby-one-regular {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.link-super-large {
+  font-size: 42px;
+}
+
+.link-large {
+    font-size: 24px;
+}
+
+.link-small {
+    font-size: 12px;
+}
+
+.icon-location {
+    color: #A711D0;
+}
+
+.card-about-border-radius {
+  border-radius: 48px;
 }
