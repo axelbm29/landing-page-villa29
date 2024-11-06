@@ -14,8 +14,10 @@ declare module 'react-pageflip' {
     }
 
     export default class HTMLFlipBook extends Component<IProps> {
-        flipNext(corner?: ['top', 'bottom']): void; // Hacer que corner sea opcional
-        flipPrev(corner?: ['top', 'bottom']): void; // Hacer que corner sea opcional
-        // Otros métodos si es necesario
+        pageFlip() {
+            throw new Error('Method not implemented.');
+        }
+        flipNext(corner?: ['top', 'bottom']): void;
+        flipPrev(corner?: ['top', 'bottom']): void;
     }
 }

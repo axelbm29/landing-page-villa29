@@ -71,7 +71,7 @@ const Navbar = () => {
 
     return (
         <div className={`relative w-full bowlby-one-regular z-30 bg-black md:bg-transparent transition-all duration-300 ${showNavbar ? 'opacity-100' : 'opacity-0'}`}>
-            {/* Navbar en dispositivos móviles */}
+            {/* navbar en dispositivos moviles */}
             <div className={`md:hidden flex items-center justify-between px-4 py-2 bg-transparent z-50 fixed top-0 left-0 right-0 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
                 <div className="md:hidden flex-1 text-center">
                     <img src={logo.src} alt="Logo" className="h-20 mx-auto" />
@@ -82,7 +82,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Enlaces de navegación en dispositivos de escritorio */}
+            {/* enlaces de navegacion en dispositivos de escritorio */}
             <div className="hidden md:flex justify-center items-center px-4 py-2">
                 <div className="flex-[0.2] text-center">
                     <img src={logo.src} alt="Logo" className="h-24 md:h-16 mx-auto" />
@@ -111,7 +111,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Menú móvil */}
+            {/* menu movil */}
             <motion.div
                 initial={false}
                 animate={nav ? 'open' : 'closed'}
@@ -136,7 +136,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                {/* Iconos de redes sociales */}
+                {/* iconos de redes sociales */}
                 <div className="flex space-x-6 mb-6">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-[#A711D0]">
                         <FaFacebook size={36} />
@@ -149,7 +149,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                {/* Divisor y la dirección */}
+                {/* divisor y la direccion */}
                 <hr className="border-t-2 border-[#A711D0] w-4/5 mx-auto" />
                 <div className="flex items-center text-sm mt-4 mb-2 font-lato">
                     <FaMapMarkerAlt size={20} className="mr-2 icon-location" />

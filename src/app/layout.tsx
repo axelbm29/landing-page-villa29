@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const bowlbyOne = localFont({
   src: "./fonts/BowlbyOne-Regular.woff",
   variable: "--font-bowlby-one",
-  weight: "400", // Ajusta el peso si es necesario
+  weight: "400",
 });
 
 export default function RootLayout({

@@ -5,9 +5,9 @@ import Image from 'next/image'
 const About = () => {
     return (
         <div className="w-full h-full flex justify-center py-24 px-3.5 bg-black">
-            {/* Card container */}
+            {/* container de la card */}
             <div className="bg-[#CFFF04] card-about-border-radius shadow-lg flex flex-col md:flex-row items-center w-full max-w-5xl min-h-[520px]">
-                {/* Left side: Title and image */}
+                {/* lado izquierdo */}
                 <div className="md:w-1/2 p-6 flex flex-col items-center justify-center text-center space-y-2">
                     <h2 className="text-black link-super-large font-bold bowlby-one-regular leading-none mb-8">
                         ¿ABURRIDO
@@ -25,7 +25,7 @@ const About = () => {
                     />
                 </div>
 
-                {/* Right side: Description text */}
+                {/* lado derecho */}
                 <div className="md:w-1/2 p-6 text-justify flex flex-col justify-center">
                     <p className="text-sm md:text-lg leading-relaxed text-black mb-4 md:pr-9 font-semibold font-inter">
                         En Villa 29, creemos que cada comida cuenta una historia. Nos esforzamos por ofrecer un menú que no solo satisface el paladar, sino que también celebra la rica cultura culinaria que nos rodea. Cada plato es una obra maestra, elaborado con ingredientes frescos y locales que despiertan los sentidos y crean momentos memorables.

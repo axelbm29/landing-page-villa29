@@ -4,22 +4,21 @@ import { FaMapMarkerAlt, FaRegCalendarAlt } from 'react-icons/fa'; // Importa lo
 const Ubication = () => {
     return (
         <div className="w-full flex flex-col items-center justify-center py-12 px-3.5 bg-black">
-            {/* Title */}
+            {/* titulo */}
             <h2 className="text-white bowlby-one-regular text-center link-super-large font-bold mb-8">UBÍCANOS</h2>
 
-            {/* Content container */}
+            {/* container de la card */}
             <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl gap-8">
                 
-                {/* Left side: Info card */}
+                {/* lado izquierdo */}
                 <div className="bg-[#CFFF04] p-8 items-center justify-center rounded-lg w-full md:w-[500px] min-h-[500px] flex flex-col mb-8 md:mr-8 md:w-1/3 md:mb-0 text-center">
-                    {/* Location Info */}
+                    {/* info de la localizacion */}
                     <div className="flex flex-col items-center mb-8">
                         <FaMapMarkerAlt className="text-[#1E1E1E] text-5xl mb-4" />
                         <h3 className="text-[#1E1E1E] font-bold text-2xl bowlby-one-regular">UBICACIÓN</h3>
                         <p className="text-[#1E1E1E] text-lg text-center mt-2 font-inter">Sector 3 Grupo 29 Manzana F Lote 3<br />Villa el Salvador</p>
                     </div>
 
-                    {/* Schedule Info */}
                     <div className="flex flex-col items-center">
                         <FaRegCalendarAlt className="text-[#1E1E1E] text-5xl mb-4 mt-8" />
                         <h3 className="text-[#1E1E1E] font-bold text-2xl bowlby-one-regular">HORARIO</h3>
@@ -28,7 +27,7 @@ const Ubication = () => {
                     </div>
                 </div>
 
-                {/* Right side: Google Maps iframe */}
+                {/* maps, lado derecho */}
                 <div className="w-full md:w-[500px] h-[500px]">
                     <iframe
                         title="Ubicación Villa 29"

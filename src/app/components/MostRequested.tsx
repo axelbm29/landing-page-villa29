@@ -7,14 +7,14 @@ import cheese from '../assets/Imagen-H.-Cheese.png';
 const MostRequested = () => {
     return (
         <div className="w-full flex flex-col items-center py-12 px-3.5 bg-black">
-            {/* Title */}
+            {/* titulo */}
             <h2 className="link-super-large font-bold bowlby-one-regular text-white text-center mb-8">
                 LOS MÁS PEDIDOS
             </h2>
 
-            {/* Card container */}
+            {/* container de card */}
             <div className="flex flex-wrap justify-center gap-6 min-h-[500px]">
-                {/* Card 1 */}
+                {/* card 1 */}
                 <div className="border-white rounded-lg shadow-lg overflow-hidden w-[300px] relative">
                     <Image
                         src={cubalibre}
@@ -23,14 +23,13 @@ const MostRequested = () => {
                         height={600}
                         className="object-cover h-auto w-full"
                     />
-                    {/* Overlay with name and price */}
                     <div className="absolute bottom-8 md:bottom-16 left-1/4 transform -translate-x-1/4 bg-[#1E1E1E] text-white py-4 px-4 rounded-lg w-4/6">
                         <h3 className="font-semibold bowlby-one-regular">Cuba Libre</h3>
                         <p className="text-sm bowlby-one-regular text-[#A711D0]">S/ 20.00</p>
                     </div>
                 </div>
 
-                {/* Card 2 */}
+                {/* card 2 */}
                 <div className="border-white rounded-lg shadow-lg overflow-hidden w-[300px] relative">
                     <Image
                         src={cheese}
@@ -39,14 +38,13 @@ const MostRequested = () => {
                         height={600}
                         className="object-cover h-auto w-full"
                     />
-                    {/* Overlay with name and price */}
                     <div className="absolute bottom-8 md:bottom-16 left-1/4 transform -translate-x-1/4 bg-[#1E1E1E] text-white py-4 px-4 rounded-lg w-4/6">
                         <h3 className="font-semibold bowlby-one-regular">Hamb. Cheese</h3>
                         <p className="text-sm bowlby-one-regular text-[#A711D0]">S/ 25.00</p>
                     </div>
                 </div>
 
-                {/* Card 3 */}
+                {/* card 3 */}
                 <div className="border-white rounded-lg shadow-lg overflow-hidden w-[300px] relative">
                     <Image
                         src={alitas}
@@ -55,7 +53,6 @@ const MostRequested = () => {
                         height={600}
                         className="object-cover h-auto w-full"
                     />
-                    {/* Overlay with name and price */}
                     <div className="absolute bottom-8 md:bottom-16 left-1/4 transform -translate-x-1/4 bg-[#1E1E1E] text-white py-4 px-4 rounded-lg w-4/6">
                         <h3 className="font-semibold bowlby-one-regular">Alitas BBQ</h3>
                         <p className="text-sm bowlby-one-regular text-[#A711D0]">S/ 18.00</p>

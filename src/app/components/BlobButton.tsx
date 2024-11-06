@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./BlobButton.module.css";
 
 interface BlobButtonProps {
-    children: React.ReactNode; // Definimos el tipo de children
+    children: React.ReactNode;
 }
 
 const BlobButton: React.FC<BlobButtonProps> = ({ children }) => {
