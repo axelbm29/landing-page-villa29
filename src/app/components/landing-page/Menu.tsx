@@ -3,6 +3,7 @@
 import React, { useState, useRef } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Menu: React.FC = () => {
     
@@ -37,7 +38,13 @@ const Menu: React.FC = () => {
     };
 
     return (
-        <div className="relative flex mb-36 md:mb-4 flex-col py-16 items-center bg-black">
+        <motion.div
+            className="relative flex mb-36 md:mb-4 flex-col py-16 items-center bg-black"
+            id='carta'
+            initial={{ opacity: 0, y: -100 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 1 }} 
+        >
             <h1 className="link-super-large font-bold text-[#CFFF04] md:mb-8 bowlby-one-regular">CARTA</h1>
 
             {/* fondo alrededor del flipbook */}
@@ -116,7 +123,7 @@ const Menu: React.FC = () => {
             </div>
 
             <div className="h-4" />
-        </div>
+        </motion.div>
     );
 };
 

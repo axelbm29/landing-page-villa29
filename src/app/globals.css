@@ -23,7 +23,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #000;
 }
 
 .bowlby-one-regular {
@@ -103,7 +103,7 @@ body {
         margin-top: -30%;
     }
     .blur-background {
-        top: 58%;
+        top: 60%;
         width: 300px;
         height: 570px;
     }
@@ -160,11 +160,11 @@ body {
     color: white;
 }
 .navigation-button-left {
-    left: 25%;
+    left: 20%;
 }
 
 .navigation-button-right {
-    right: 25%;
+    right: 20%;
 }
 
 
@@ -173,7 +173,7 @@ body {
         position: absolute;
         top: 100%;
         transform: translateY(0);
-        margin: 10px;
+        margin-top: 50px;
     }
     
 }

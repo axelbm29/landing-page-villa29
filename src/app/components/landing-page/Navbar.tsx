@@ -4,7 +4,6 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
-import logo from "../assets/villa29-logo.png";
 import { FaFacebook, FaInstagram, FaMapMarkerAlt, FaTiktok } from "react-icons/fa";
 import BlobButton from "./BlobButton";
 
@@ -74,7 +73,7 @@ const Navbar = () => {
             {/* navbar en dispositivos moviles */}
             <div className={`md:hidden flex items-center justify-between px-4 py-2 bg-transparent z-50 fixed top-0 left-0 right-0 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
                 <div className="md:hidden flex-1 text-center">
-                    <img src={logo.src} alt="Logo" className="h-20 mx-auto" />
+                    <img src="/villa29-logo.png" alt="Logo" className="h-24 mx-auto" />
                 </div>
                 
                 <div onClick={toggleNav} className="text-white cursor-pointer z-50 absolute top-8 right-4">
@@ -85,7 +84,7 @@ const Navbar = () => {
             {/* enlaces de navegacion en dispositivos de escritorio */}
             <div className="hidden md:flex justify-center items-center px-4 py-2">
                 <div className="flex-[0.2] text-center">
-                    <img src={logo.src} alt="Logo" className="h-24 md:h-16 mx-auto" />
+                    <img src="/villa29-logo.png" alt="Logo" className="h-24 md:h-16 mx-auto" />
                 </div>
 
                 <div className="flex items-center flex-1 justify-end">
@@ -138,13 +137,13 @@ const Navbar = () => {
 
                 {/* iconos de redes sociales */}
                 <div className="flex space-x-6 mb-6">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-[#A711D0]">
+                    <a href="https://www.facebook.com/share/9372ZJLM7Ju2ewzZ/" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-[#A711D0]">
                         <FaFacebook size={36} />
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-[#A711D0]">
+                    <a href="https://www.instagram.com/villa29restobar/" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-[#A711D0]">
                         <FaInstagram size={36} />
                     </a>
-                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-[#A711D0]">
+                    <a href="https://www.tiktok.com/@villa29_restobar?_t=8quIkiMBMRS&_r=1" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 hover:text-[#A711D0]">
                         <FaTiktok size={36} />
                     </a>
                 </div>
